@@ -60,8 +60,7 @@
 
   /* ── Typing effect ─────────────────────────────── */
   const roles = [
-    'CSE Student',
-    'Technopreneur',
+    'CSE Student & Technopreneur',
     'Founder @ Inook Ai',
     'Full Stack Builder',
     'DSA Learner'
