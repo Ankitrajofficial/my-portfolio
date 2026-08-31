@@ -56,6 +56,8 @@
     menuBtn.setAttribute('aria-expanded', String(open));
   });
   navLinks.forEach(l => l.addEventListener('click', closeMenu));
+  const mobileResume = $('.mobile-resume');
+  if (mobileResume) mobileResume.addEventListener('click', closeMenu);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
   /* ── Typing effect ─────────────────────────────── */
