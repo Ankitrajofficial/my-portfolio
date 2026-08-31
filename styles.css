@@ -415,7 +415,7 @@ html[data-theme="dark"] .blob{ opacity:.28; }
 
 /* Wide parent-venture card */
 .project-card--wide{
-  grid-column:1 / -1;
+  grid-column:1 / -1; margin-bottom:2rem;
   display:grid; grid-template-columns:1.5fr 1fr; gap:1.8rem;
   background:linear-gradient(145deg, hsl(var(--card)), hsl(var(--primary)/.05));
 }
