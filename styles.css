@@ -413,6 +413,31 @@ html[data-theme="dark"] .blob{ opacity:.28; }
 .project-link:hover{ text-decoration:underline; }
 .project-link.muted{ color:hsl(var(--muted)); font-weight:500; }
 
+/* Wide parent-venture card */
+.project-card--wide{
+  grid-column:1 / -1;
+  display:grid; grid-template-columns:1.5fr 1fr; gap:1.8rem;
+  background:linear-gradient(145deg, hsl(var(--card)), hsl(var(--primary)/.05));
+}
+.wide-main{ display:flex; flex-direction:column; }
+.wide-side{
+  background:hsl(var(--bg-alt)); border:1px solid hsl(var(--border));
+  border-radius:16px; padding:1.2rem; align-self:start;
+}
+.wide-side h4{
+  font-size:.76rem; text-transform:uppercase; letter-spacing:.07em;
+  color:hsl(var(--muted)); margin-bottom:.9rem;
+}
+.venture{
+  display:block; padding:.75rem .9rem; border-radius:12px; margin-bottom:.55rem;
+  background:hsl(var(--card)); border:1px solid hsl(var(--border));
+  transition:transform .2s, border-color .2s, box-shadow .2s;
+}
+.venture:last-child{ margin-bottom:0; }
+.venture:hover{ transform:translateX(4px); border-color:hsl(var(--primary)/.4); box-shadow:var(--shadow-sm); }
+.venture b{ display:block; font-family:var(--font-head); font-size:.95rem; }
+.venture span{ font-size:.78rem; color:hsl(var(--muted)); }
+
 .tag{
   padding:.28rem .7rem; border-radius:999px; font-size:.72rem; font-weight:600;
   letter-spacing:.03em; display:inline-block;
@@ -588,6 +613,7 @@ html[data-theme="dark"] .blob{ opacity:.28; }
   .about-grid, .contact-grid{ grid-template-columns:1fr; }
   .featured-body{ grid-template-columns:1fr; }
   .featured-stats{ grid-template-columns:repeat(2,1fr); }
+  .project-card--wide{ grid-template-columns:1fr; }
   .footer-inner{ grid-template-columns:1fr 1fr; }
   .footer-brand{ grid-column:1 / -1; }
 }
@@ -611,6 +637,7 @@ html[data-theme="dark"] .blob{ opacity:.28; }
   .section{ padding:66px 0; }
   .stats-row{ grid-template-columns:repeat(2,1fr); }
   .skills-grid, .projects-grid, .about-cards, .quick-facts{ grid-template-columns:1fr; }
+  .project-card--wide{ grid-template-columns:1fr; }
   .semesters{ grid-template-columns:1fr; }
   .tl-head{ flex-direction:column; }
   .tl-side{ align-items:flex-start; text-align:left; flex-direction:row; flex-wrap:wrap; gap:.6rem; align-items:center; }
