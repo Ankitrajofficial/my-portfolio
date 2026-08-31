@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ankit Raj — Web Development | Founder | CSE Undergraduate</title>
+<meta name="description" content="Portfolio of Ankit Raj — B.Tech CSE student at Lovely Professional University, founder of Inook Ai and Cooper File, building Paperscart. Turning ideas into shipped products." />
+<meta name="author" content="Ankit Raj" />
+<meta name="keywords" content="Ankit Raj, Portfolio, Web Development, Full Stack, LPU, Computer Science, Inook Ai, Paperscart, Cooper File" />
+<meta name="theme-color" content="#2563eb" />
+
+<meta property="og:title" content="Ankit Raj — Web Development | Founder | CSE Undergraduate" />
+<meta property="og:description" content="B.Tech CSE at LPU. Founder of Inook Ai &amp; Cooper File. Building Paperscart." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><text y='70' x='50' text-anchor='middle' font-size='58' font-family='Poppins,system-ui' font-weight='700' fill='white'>A</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#hero">Skip to content</a>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-mark">AR</span>
+      <span class="nav-logo-text">Ankit Raj</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm nav-resume" href="assets/Ankit_Raj_Resume.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        Resume
+      </a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="badge reveal">
+        <span class="dot"></span> Available for internships &amp; collaborations
+      </span>
+
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="gradient-text">Ankit Raj</span>
+      </h1>
+
+      <h2 class="hero-role reveal">
+        <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+      </h2>
+
+      <p class="hero-text reveal">
+        B.Tech Computer Science undergraduate at Lovely Professional University who builds
+        the product and then goes out and sells it. Founder of <strong>Inook Ai</strong> and
+        <strong>Cooper File</strong>, currently building <strong>Paperscart</strong> — a paid
+        social platform with a real wallet economy underneath it.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+          View Projects
+        </a>
+        <a href="assets/Ankit_Raj_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Download Resume
+        </a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/Ankitrajofficial" target="_blank" rel="noopener" class="social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ankitaj02/" target="_blank" rel="noopener" class="social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:ankitrajjgupta02@gmail.com" class="social" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="tel:+916207464174" class="social" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <img src="assets/ankit-raj.jpg" alt="Ankit Raj" width="600" height="700" />
+        </div>
+      </div>
+      <div class="float-chip chip-1"><span>₹2L+</span> revenue generated</div>
+      <div class="float-chip chip-2"><span>3</span> ventures running</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats-row reveal">
+      <div class="stat-card">
+        <b class="counter" data-count="3">0</b>
+        <span>Ventures Running</span>
+      </div>
+      <div class="stat-card">
+        <b class="counter" data-count="200000" data-format="inr">0</b>
+        <span>Revenue Generated</span>
+      </div>
+      <div class="stat-card">
+        <b class="counter" data-count="28" data-suffix="+">0</b>
+        <span>Businesses Served</span>
+      </div>
+      <div class="stat-card">
+        <b class="counter" data-count="8" data-suffix="+">0</b>
+        <span>Websites Delivered</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+  </a>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-badge">About Me</span>
+      <h2 class="section-title">Get to know the <span class="gradient-text">person behind the code</span></h2>
+      <p class="section-sub">A third-semester CSE student who treats every semester's syllabus as raw material for something shippable.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h3>Student by day, builder by night.</h3>
+        <p>
+          I'm in my <strong>3rd semester of B.Tech Computer Science &amp; Engineering</strong> at
+          Lovely Professional University, Phagwara. My first semester gave me Python, HTML and CSS —
+          and I immediately used them to put real websites in front of real businesses. Second semester
+          added DBMS and C. Right now I'm deep in <strong>Data Structures &amp; Algorithms, C++ and
+          Computer Networks</strong>.
+        </p>
+        <p>
+          Alongside coursework I run <strong>Inook Ai</strong>, a growth agency delivering complete digital
+          systems to Indian local businesses, and <strong>Cooper File</strong>, a plug-and-play reputation
+          and local-SEO studio serving 20 active businesses. In parallel I'm engineering
+          <strong>Paperscart</strong> — a premium paid social PWA with a full integer wallet economy,
+          Razorpay integration and a 31-table Postgres schema.
+        </p>
+        <p>
+          I started with Arduino builds in my first year — sensors, microcontrollers, physical output — and
+          that habit of "make it actually work" never left.
+        </p>
+
+        <div class="quick-facts">
+          <div class="fact"><span class="fact-k">Location</span><span class="fact-v">Phagwara, Punjab, India</span></div>
+          <div class="fact"><span class="fact-k">Degree</span><span class="fact-v">B.Tech CSE — LPU</span></div>
+          <div class="fact"><span class="fact-k">CGPA</span><span class="fact-v">5.71</span></div>
+          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">Web Dev · DSA · Product</span></div>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <article class="mini-card reveal">
+          <div class="mini-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h4>Currently Pursuing</h4>
+          <p>B.Tech CSE at Lovely Professional University — 3rd semester, focused on DSA, C++ and Computer Networks.</p>
+        </article>
+
+        <article class="mini-card reveal">
+          <div class="mini-icon icon-violet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0-6 6c0 2 1 3 1.5 4.5.5 1.5.5 2.5.5 2.5h8s0-1 .5-2.5C16.5 12 18 11 18 9a6 6 0 0 0-6-6Z"/><path d="M9 21h6"/></svg>
+          </div>
+          <h4>Problem Solver</h4>
+          <p>From wallet economies with idempotent credits to one-tap QR review systems — I like problems that have money and users attached.</p>
+        </article>
+
+        <article class="mini-card reveal">
+          <div class="mini-icon icon-sky">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+          </div>
+          <h4>Builder Mindset</h4>
+          <p>8+ business websites delivered live, ₹2,00,000+ generated, and a client lifecycle I run end to end — sales, scoping, delivery, handover.</p>
+        </article>
+
+        <article class="mini-card reveal">
+          <div class="mini-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h4>Learning Mindset</h4>
+          <p>Certified in Python, C and Cyber Security; trained in Design Thinking &amp; Figma. Every new subject becomes a project.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SKILLS ═══════════ -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-badge">Skills &amp; Expertise</span>
+      <h2 class="section-title">A toolkit built by <span class="gradient-text">shipping things</span></h2>
+      <p class="section-sub">Languages, frameworks and platforms I use to take an idea from a blank folder to a live URL.</p>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-card reveal">
+        <header>
+          <div class="mini-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+          </div>
+          <div>
+            <h3>Programming Languages</h3>
+            <p>Core problem-solving foundation</p>
+          </div>
+        </header>
+        <ul class="bars">
+          <li data-level="85"><span>Python</span></li>
+          <li data-level="80"><span>JavaScript</span></li>
+          <li data-level="78"><span>C</span></li>
+          <li data-level="72"><span>C++</span></li>
+          <li data-level="65"><span>Java</span></li>
+          <li data-level="60"><span>PHP</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <header>
+          <div class="mini-icon icon-violet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div>
+            <h3>Web Development</h3>
+            <p>Front to back, design to deploy</p>
+          </div>
+        </header>
+        <ul class="bars">
+          <li data-level="92"><span>HTML5</span></li>
+          <li data-level="88"><span>CSS3</span></li>
+          <li data-level="80"><span>Tailwind CSS</span></li>
+          <li data-level="75"><span>React 18 + Vite</span></li>
+          <li data-level="72"><span>Express.js</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <header>
+          <div class="mini-icon icon-sky">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+          </div>
+          <div>
+            <h3>Databases &amp; Cloud</h3>
+            <p>Where the state actually lives</p>
+          </div>
+        </header>
+        <ul class="bars">
+          <li data-level="80"><span>MySQL</span></li>
+          <li data-level="76"><span>Neon Postgres</span></li>
+          <li data-level="70"><span>MongoDB</span></li>
+          <li data-level="68"><span>Supabase</span></li>
+          <li data-level="65"><span>Upstash Redis</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <header>
+          <div class="mini-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div>
+            <h3>Core CS Fundamentals</h3>
+            <p>The semester syllabus, put to work</p>
+          </div>
+        </header>
+        <ul class="bars">
+          <li data-level="70"><span>Data Structures &amp; Algorithms</span></li>
+          <li data-level="78"><span>DBMS</span></li>
+          <li data-level="68"><span>Computer Networks</span></li>
+          <li data-level="72"><span>OOP Concepts</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="tools-block reveal">
+      <h3 class="tools-title">Tools &amp; Platforms</h3>
+      <div class="chips">
+        <span class="chip">Git &amp; GitHub</span>
+        <span class="chip">Vercel</span>
+        <span class="chip">Cloudflare R2</span>
+        <span class="chip">Microsoft Azure</span>
+        <span class="chip">Google Cloud Console</span>
+        <span class="chip">Razorpay</span>
+        <span class="chip">Figma</span>
+        <span class="chip">Google Business Profile</span>
+        <span class="chip">SEO</span>
+        <span class="chip">Generative AI</span>
+        <span class="chip">Agentic AI</span>
+        <span class="chip">Arduino</span>
+      </div>
+
+      <h3 class="tools-title">Soft Skills</h3>
+      <div class="chips">
+        <span class="chip chip-alt">Problem Solving</span>
+        <span class="chip chip-alt">Time Management</span>
+        <span class="chip chip-alt">Adaptability</span>
+        <span class="chip chip-alt">Finance Management</span>
+        <span class="chip chip-alt">Client Communication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROJECTS ═══════════ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-badge">Projects</span>
+      <h2 class="section-title">Things I've <span class="gradient-text">built and shipped</span></h2>
+      <p class="section-sub">Real products with real users, real revenue and real deadlines — not just coursework.</p>
+    </div>
+
+    <!-- Featured spotlight -->
+    <article class="featured reveal">
+      <div class="featured-badge">Featured Project Spotlight</div>
+      <div class="featured-body">
+        <div class="featured-copy">
+          <h3>Paperscart</h3>
+          <p class="featured-meta">Apr 2026 — Present · Premium paid social platform (PWA)</p>
+          <p>
+            A premium paid social platform where every interaction carries real monetary value — a paid
+            manifestation wall, anonymous encrypted confessions and self-commitment contracts, all running
+            on a single wallet.
+          </p>
+          <ul class="feature-list">
+            <li>Complete integer wallet economy with Razorpay integration — HMAC-verified webhooks and idempotent credits across a 31-table Postgres schema.</li>
+            <li>Peer-to-peer creator-earnings model: community wishes and manifests flow directly to post authors, so posts can earn many multiples of their posting cost.</li>
+            <li>Production SSR/SEO with dynamic OG images, web push notifications and AES-256-GCM encrypted confessions.</li>
+            <li>50+ early users onboarded; in user-acquisition phase ahead of the Jan 2027 real-money launch.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">Express.js</span>
+            <span class="chip">Neon Postgres</span><span class="chip">Cloudflare R2</span><span class="chip">Razorpay</span>
+            <span class="chip">Vercel</span><span class="chip">Azure</span><span class="chip">Google Cloud</span>
+          </div>
+          <div class="featured-cta">
+            <a class="btn btn-primary btn-sm" href="https://paperscart.com" target="_blank" rel="noopener">
+              Visit Live Site
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="featured-stats">
+          <div><b>31</b><span>table Postgres schema</span></div>
+          <div><b>50+</b><span>early users</span></div>
+          <div><b>AES-256</b><span>GCM encryption</span></div>
+          <div><b>PWA</b><span>installable + push</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-top">
+          <div class="mini-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+          </div>
+          <span class="tag tag-live">Live</span>
+        </div>
+        <h3>Inook Ai</h3>
+        <p class="project-meta">Jan 2026 — Present · Founder</p>
+        <p>
+          A business-growth agency delivering complete digital systems to Indian local businesses through
+          one fixed-price package covering 9 deliverables — website, branding, Google Business Profile,
+          booking systems and brand films.
+        </p>
+        <ul class="feature-list small">
+          <li>₹2,00,000+ revenue across hospitality, healthcare and stone-export clients</li>
+          <li>Live portfolio of 8+ delivered business websites</li>
+          <li>End-to-end GBP audits and optimization packs for local search visibility</li>
+          <li>Full client lifecycle owned solo — sales, scoping, delivery, 30-day post-handover care</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          <span class="chip">Figma</span><span class="chip">GBP</span><span class="chip">SEO</span>
+        </div>
+        <a class="project-link" href="https://inook.in" target="_blank" rel="noopener">
+          inook.in
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        </a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <div class="mini-icon icon-violet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
+          </div>
+          <span class="tag tag-live">Live</span>
+        </div>
+        <h3>Cooper File</h3>
+        <p class="project-meta">Jun 2026 — Present · Founder</p>
+        <p>
+          A solutions agency helping local businesses grow their online reputation and search presence with
+          plug-and-play systems that require zero technical effort from the client.
+        </p>
+        <ul class="feature-list small">
+          <li>One-tap review collection: customers submit Google reviews via QR without typing anything</li>
+          <li>Serving 20 active businesses with review systems, local SEO and reputation management</li>
+          <li>Standardized delivery through reusable templates and printed QR collateral</li>
+          <li>Same-day client onboarding as a result of that standardization</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">QR Systems</span><span class="chip">Google Business Profile</span>
+          <span class="chip">Local SEO</span><span class="chip">Print Collateral</span>
+        </div>
+        <span class="project-link muted">Client-facing systems</span>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <div class="mini-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="10" x="4" y="7" rx="2"/><path d="M8 7V5M16 7V5M2 12h2M20 12h2M9 17v2M15 17v2"/></svg>
+          </div>
+          <span class="tag tag-academic">Academic</span>
+        </div>
+        <h3>Arduino Hardware Builds</h3>
+        <p class="project-meta">First Year · Embedded &amp; Electronics</p>
+        <p>
+          Hands-on microcontroller projects built during my first year — wiring sensors and actuators to an
+          Arduino board and programming the logic that connects them.
+        </p>
+        <ul class="feature-list small">
+          <li>Sensor-driven circuits with real-time input reading and conditional output</li>
+          <li>Embedded C-style programming on the Arduino platform</li>
+          <li>Breadboard prototyping, debugging and iteration on physical hardware</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Arduino</span><span class="chip">Embedded C</span>
+          <span class="chip">Sensors</span><span class="chip">Circuit Design</span>
+        </div>
+        <span class="project-link muted">Lab &amp; self-driven builds</span>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <div class="mini-icon icon-sky">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </div>
+          <span class="tag tag-proto">Prototype</span>
+        </div>
+        <h3>Think Design Prototype</h3>
+        <p class="project-meta">Jun 2025 — Jul 2025 · LPU Summer Training</p>
+        <p>
+          An end-to-end design project run through the full design-thinking cycle — empathize, define,
+          ideate, prototype and test — which went on to shape the design of both Paperscart and Inook Ai.
+        </p>
+        <ul class="feature-list small">
+          <li>20+ screen high-fidelity interactive prototype, validated through usability testing</li>
+          <li>User research insights translated into clear, actionable design requirements</li>
+          <li>Role: Design Thinking Trainee &amp; UX Prototype Designer</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Figma</span><span class="chip">Design Thinking</span>
+          <span class="chip">UX Research</span><span class="chip">Prototyping</span>
+        </div>
+        <span class="project-link muted">Certified by LPU</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EDUCATION ═══════════ -->
+<section class="section section-alt" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-badge">Education Journey</span>
+      <h2 class="section-title">Where I'm <span class="gradient-text">learning the fundamentals</span></h2>
+      <p class="section-sub">Academic path, and the coursework I'm turning into projects each semester.</p>
+    </div>
+
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3>Lovely Professional University</h3>
+              <p class="tl-role">Bachelor of Technology — Computer Science &amp; Engineering</p>
+            </div>
+            <div class="tl-side">
+              <span class="tag tag-current">Currently Pursuing</span>
+              <span class="tl-date">Aug 2023 — Present</span>
+              <span class="tl-place">Phagwara, Punjab</span>
+            </div>
+          </div>
+          <div class="score-row">
+            <span class="score">CGPA <b>5.71</b></span>
+          </div>
+          <div class="semesters">
+            <div class="sem">
+              <h4>Semester 1</h4>
+              <div class="chips"><span class="chip">Python</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
+            </div>
+            <div class="sem">
+              <h4>Semester 2</h4>
+              <div class="chips"><span class="chip">DBMS</span><span class="chip">C Language</span></div>
+            </div>
+            <div class="sem sem-current">
+              <h4>Semester 3 <span class="now">now</span></h4>
+              <div class="chips"><span class="chip">DSA</span><span class="chip">C++</span><span class="chip">Computer Networks</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3>Gulab Memorial Inter College</h3>
+              <p class="tl-role">Higher Secondary Education</p>
+            </div>
+            <div class="tl-side">
+              <span class="tag tag-done">Graduated</span>
+              <span class="tl-date">May 2021 — Mar 2023</span>
+              <span class="tl-place">Bettiah, Bihar</span>
+            </div>
+          </div>
+          <div class="score-row"><span class="score">Percentage <b>75.4%</b></span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3>Krishna International Public School</h3>
+              <p class="tl-role">Secondary Education</p>
+            </div>
+            <div class="tl-side">
+              <span class="tag tag-done">Graduated</span>
+              <span class="tl-date">Jun 2020 — Mar 2021</span>
+              <span class="tl-place">Bettiah, Bihar</span>
+            </div>
+          </div>
+          <div class="score-row"><span class="score">Percentage <b>78.7%</b></span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CERTIFICATES ═══════════ -->
+<section class="section" id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-badge">Certifications &amp; Training</span>
+      <h2 class="section-title">Learning, <span class="gradient-text">verified</span></h2>
+      <p class="section-sub">Courses and training programs completed alongside my degree.</p>
+    </div>
+
+    <div class="cert-grid">
+      <article class="cert-card reveal">
+        <div class="cert-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <h3>Python Programming: From Fundamentals to Practical Application</h3>
+        <p class="cert-issuer">Saylor Academy</p>
+        <p>Core Python — syntax, control flow, data structures and applying the language to practical problems.</p>
+        <span class="tag tag-done">Certified</span>
+      </article>
+
+      <article class="cert-card reveal">
+        <div class="cert-icon icon-violet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+        </div>
+        <h3>Cyber Security: Ethical Hacking &amp; Pseudo Banking Transactions</h3>
+        <p class="cert-issuer">Infosys Springboard</p>
+        <p>Ethical hacking fundamentals and hands-on practice securing simulated banking transactions.</p>
+        <span class="tag tag-done">Certified</span>
+      </article>
+
+      <article class="cert-card reveal">
+        <div class="cert-icon icon-sky">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        </div>
+        <h3>C Programming</h3>
+        <p class="cert-issuer">NeoColab</p>
+        <p>Structured programming in C — pointers, memory, arrays and problem solving at the fundamentals level.</p>
+        <span class="tag tag-done">Certified</span>
+      </article>
+
+      <article class="cert-card reveal">
+        <div class="cert-icon icon-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0-6 6c0 2 1 3 1.5 4.5.5 1.5.5 2.5.5 2.5h8s0-1 .5-2.5C16.5 12 18 11 18 9a6 6 0 0 0-6-6Z"/><path d="M9 21h6"/></svg>
+        </div>
+        <h3>Think Design Prototype — Design Thinking &amp; Figma</h3>
+        <p class="cert-issuer">Lovely Professional University · Summer Training 2025</p>
+        <p>Full design-thinking cycle applied to a real problem, ending in a validated 20+ screen prototype.</p>
+        <span class="tag tag-done">Certified</span>
+      </article>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section-head sub-head reveal">
+      <span class="section-badge">Achievements</span>
+      <h2 class="section-title small-title">Milestones worth <span class="gradient-text">pointing at</span></h2>
+    </div>
+
+    <div class="achv-grid">
+      <article class="achv-card reveal">
+        <b>10+</b>
+        <h4>Businesses Managed Concurrently</h4>
+        <p>Successfully running Inook Ai while managing 10+ business accounts at the same time.</p>
+      </article>
+      <article class="achv-card reveal">
+        <b>50+</b>
+        <h4>Early Users on Paperscart</h4>
+        <p>Paperscart has already crossed 50+ early users, adding adventure and meaning to their daily lives.</p>
+      </article>
+      <article class="achv-card reveal">
+        <b>₹2L+</b>
+        <h4>Revenue Generated</h4>
+        <p>Earned through acquiring and servicing clients across hospitality, healthcare and stone-export sectors.</p>
+      </article>
+      <article class="achv-card reveal">
+        <b>20+</b>
+        <h4>Screen Prototype Shipped</h4>
+        <p>Built and usability-tested a 20+ screen high-fidelity interactive prototype during LPU summer training.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-badge">Contact Me</span>
+      <h2 class="section-title">Let's <span class="gradient-text">build something</span></h2>
+      <p class="section-sub">Open to internships, freelance projects and collaborations. I usually reply within a day.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a class="info-card reveal" href="mailto:ankitrajjgupta02@gmail.com">
+          <div class="mini-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div><h4>Email</h4><p>ankitrajjgupta02@gmail.com</p></div>
+        </a>
+
+        <a class="info-card reveal" href="tel:+916207464174">
+          <div class="mini-icon icon-violet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </div>
+          <div><h4>Phone</h4><p>+91 62074 64174</p></div>
+        </a>
+
+        <a class="info-card reveal" href="https://www.linkedin.com/in/ankitaj02/" target="_blank" rel="noopener">
+          <div class="mini-icon icon-sky">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div><h4>LinkedIn</h4><p>linkedin.com/in/ankitaj02</p></div>
+        </a>
+
+        <a class="info-card reveal" href="https://github.com/Ankitrajofficial" target="_blank" rel="noopener">
+          <div class="mini-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </div>
+          <div><h4>GitHub</h4><p>github.com/Ankitrajofficial</p></div>
+        </a>
+
+        <div class="availability reveal">
+          <span class="dot"></span>
+          <div>
+            <h4>Currently available</h4>
+            <p>Internships · Freelance websites · Open collaborations</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Send a Message</h3>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Internship / Project / Collaboration" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Hi Ankit! I'm reaching out regarding..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          Send Message
+        </button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-mark">AR</span>
+        <span class="nav-logo-text">Ankit Raj</span>
+      </a>
+      <p>B.Tech CSE undergraduate at LPU. Founder of Inook Ai &amp; Cooper File. Building Paperscart.</p>
+      <div class="hero-socials">
+        <a href="https://github.com/Ankitrajofficial" target="_blank" rel="noopener" class="social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ankitaj02/" target="_blank" rel="noopener" class="social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:ankitrajjgupta02@gmail.com" class="social" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ventures</h4>
+      <a href="https://inook.in" target="_blank" rel="noopener">Inook Ai</a>
+      <a href="https://paperscart.com" target="_blank" rel="noopener">Paperscart</a>
+      <a href="#projects">Cooper File</a>
+      <a href="assets/Ankit_Raj_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> Ankit Raj. Built from scratch with HTML, CSS &amp; JavaScript.</p>
+    <a href="#hero" class="back-top">Back to top
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
